@@ -1,0 +1,2 @@
+Name: Hassan, ID: 1, Salary: 3000
+Name: Mir Hamza, ID: 2, Salary: 2000
