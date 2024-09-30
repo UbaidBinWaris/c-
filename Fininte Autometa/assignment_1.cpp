@@ -7,9 +7,10 @@ int current_state;
 
 void state_1()
 {
-    if (index == language.length())
+    if (index >= language.length())
     {
         cout << "\n\t" << language << " : String  NOT Accpected ! ! ! \n\n";
+        index = language.length() + 2;
         return;
     }
 
@@ -23,9 +24,10 @@ void state_1()
 }
 void state_2()
 {
-    if (index == language.length())
+    if (index >= language.length())
     {
         cout << "\n\t" << language << " : String  NOT Accpected ! ! ! \n\n";
+        index = language.length() + 2;
         return;
     }
 
@@ -39,9 +41,10 @@ void state_2()
 }
 void state_3()
 {
-    if (index == language.length())
+    if (index >= language.length())
     {
         cout << "\n\t" << language << " : String Accpected > > >\n\n";
+        index = language.length() + 2;
         return;
     }
 
@@ -55,9 +58,10 @@ void state_3()
 }
 void state_4()
 {
-    if (index == language.length())
+    if (index >= language.length())
     {
         cout << "\n\t" << language << " : String  NOT Accpected ! ! ! \n\n";
+        index = language.length() + 2;
         return;
     }
 
@@ -78,7 +82,7 @@ int main()
     cin >> language;
     if (language == "QUIT")
     {
-        cout<<"\nProgram is Quiting ! ! ! \n";
+        cout << "\nProgram is Quiting ! ! ! \n";
         return 0;
     }
 
