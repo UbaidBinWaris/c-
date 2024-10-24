@@ -1,13 +1,12 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    int a[4][2] = { {1,2},
-                    {3,1},
-                    {2,2},
-                    {2,2}
-    };
+    int a[4][2] = {{1, 2},
+                   {3, 1},
+                   {2, 2},
+                   {2, 2}};
 
     int index = 0;
     int current_state = 0;
@@ -31,13 +30,13 @@ int main()
             return 0;
         }
         index++;
-
     }
-    if (current_state == 3){
+    if (current_state == 3)
+    {
         cout << "String Accpected > > > " << endl;
     }
-    else {
+    else
+    {
         cout << "string NOT Accpected ! ! ! " << endl;
     }
-
 }
