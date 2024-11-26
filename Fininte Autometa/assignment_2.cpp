@@ -11,8 +11,11 @@ int main()
     int index = 0;
     int current_state = 0;
     string language;
+
     cout << "Enter string : ";
     cin >> language;
+    // //cheak the string is valid or not
+    
 
     while (index != language.length())
     {
